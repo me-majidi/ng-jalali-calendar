@@ -4,7 +4,7 @@ jalali calendar component for Angular4+ applications
 
 
 
-![ng-jalali-calendar](https://raw.githubusercontent.com/me-majidi/ng-jalali-calendar/master/ng-jalali-calendar.jpg)
+![ng-jalali-calendar](https://raw.githubusercontent.com/me-majidi/ng-jalali-calendar/master/img-of-component.jpg)
 
 
 
