@@ -1,5 +1,5 @@
 # NgJalaliCalendar
-jalali calendar component for Angular4+ applications [DEMO](https://me-majidi.github.io/ng-jalali-calendar/)
+Jalali calendar component for Angular4+ applications [DEMO](https://me-majidi.github.io/ng-jalali-calendar/)
 
 
 
