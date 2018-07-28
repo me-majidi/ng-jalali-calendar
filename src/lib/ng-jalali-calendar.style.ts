@@ -102,4 +102,17 @@ a.btn {
   font-size: 0.8rem;
   border-radius: 15px;
 }
+
+a:hover,
+a:hover i {
+  color: #fff;
+}
+
+.month-nav,
+.year-nav {
+  min-width: 168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 `;

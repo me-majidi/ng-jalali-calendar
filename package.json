@@ -22,7 +22,11 @@
     "date",
     "calendar",
     "conversion",
-    "convert"
+    "convert",
+    "تقویم شمسی",
+    "persian",
+    "persian calendar",
+    "shamsi calendar"
   ],
   "repository": {
     "type": "git",

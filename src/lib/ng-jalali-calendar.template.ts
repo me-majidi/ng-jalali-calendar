@@ -44,5 +44,4 @@ export const NgJalaliCalendarTemplate = `
         </div>
     </div>
 </div>
-
 `;
