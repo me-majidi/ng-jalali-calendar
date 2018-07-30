@@ -53,12 +53,15 @@ afterward, add the `ng-jalali-component` tag  into the component where you want 
 
 ## API	
 **Inputs:**
-|  Input | Type  | Description |
-| --- | --- | --- |
-| selectedDates | String[] | dates that you want to be selected on the calendar  |
+
+
+ Input | Type  | Description
+ --- | --- | --- 
+ selectedDates | String[] | dates that you want to be selected on the calendar
 
 
 **Events:**
+
 | Output | $event | Description |
 | --- | ---- | --- |
 | dateSelected | String | emitted when selecting a date |
@@ -78,17 +81,17 @@ import { Component, OnInit } from '@angular/core';
 export class ExampleComponent implements OnInit {  
     selectedDate: string = '';  
     selectedDates: string[] = [
-		'1397/5/22',
-		'1397/12/1'
-		'1397/01/5'
-	];
+	'1397/5/22',
+	'1397/12/1'
+	'1397/01/5'
+    ];
   
     constructor () {}  
   
     ngOnInit () {
 	}
 	  
-	onSelectDate(event: string) { 
+    onSelectDate(event: string) { 
 		this.selectedDate = event;  
     }  
 }
