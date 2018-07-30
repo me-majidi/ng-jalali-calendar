@@ -1,20 +1,19 @@
-export const NgJalaliCalendarStyles = `
+export const calendarStyles = `
   :host {
   display: block;
   direction: rtl;
 }
-
 .calendar__nav {
   display: flex;
   justify-content: space-around;
 }
-.calendar__nav .month-nav,
-.calendar__nav .year-nav {
+.month-nav,
+.year-nav {
   display: flex;
   align-items: center;
 }
-.calendar__nav .month-nav span,
-.calendar__nav .year-nav span {
+.month-nav span,
+.year-nav span {
   margin: 0 5px;
   min-width: 50px;
   text-align: center;
@@ -25,23 +24,23 @@ export const NgJalaliCalendarStyles = `
 .calendar__body {
   margin-top: 20px;
 }
-.calendar__body .day-names {
+.day-names {
   display: flex;
   background: #424242;
   color: #FFF;
   padding: 10px 0;
   border-radius: 6px;
 }
-.calendar__body .day-names .day-name {
+.day-name {
   text-align: center;
   flex: 0 0 14.285714286%;
 }
-.calendar__body .days {
+.days {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-.calendar__body .days .day {
+.day {
   text-align: center;
   display: flex;
   align-items: center;
@@ -50,18 +49,14 @@ export const NgJalaliCalendarStyles = `
   margin-bottom: 6px;
   padding: 5px 0;
 }
-.calendar__body .days .day:not(.empty) span {
+.day:not(.empty) span {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s;
   width: 100%;
-  padding: 1rem;
-}
-.calendar__body .days .day.today span {
-  border: 1px solid #56B80C;
-  border-radius: 5px;
+  padding: 1.2rem;
 }
 
 i {
@@ -108,11 +103,62 @@ a:hover i {
   color: #fff;
 }
 
+
 .month-nav,
 .year-nav {
   min-width: 168px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.day span {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.day span:hover {
+    background-color: #cdcdcd;
+}
+
+.day.today span {
+    background-color: #0cc30c;
+    color: #fff;
+}
+
+.day.selected span {
+    background-color: #ff7575;
+    color: #fff;
+}
+
+.day.active span {
+    background-color: #ff7431;
+    color: #fff;
+}
+
+.empty span {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 400px) {
+    .day:not(.empty) span {
+        padding: 1rem !important;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    
+    .calendar__nav {
+        flex-direction: column;
+    }
+    
+    .month-nav,
+    .year-nav {
+        flex: 0 0 100%
+    }
 }
 `;

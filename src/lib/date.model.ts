@@ -1,5 +1,5 @@
 export interface DateModel {
   mDate: any;
-  selected?: boolean;
+  active?: boolean;
   today?: boolean;
 }
